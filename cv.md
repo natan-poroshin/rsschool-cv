@@ -2,7 +2,6 @@
 
 ## Personal Info
 
-___
 
 **Address:** _ul. Ivanova d.3 kv.23, Gomel, Belarus_
 **Phone:** _+375-29-106-05-75_
@@ -18,14 +17,12 @@ My main goal is to get as much knowledge as I can in various areas. If tasks are
 
 ## Education
 
----
 
 ### Sukhoi State Technical University of Gomel
 **Degree:** _Bachelor_
 **Study period:** _2014-09 - 2018-06_
 **Specialty:** _Software Engineer_
 
----
 
 ## Work experience
 
@@ -34,7 +31,6 @@ Details
 ### Some Company 2
 Details
 
----
 
 ## Skills
 | Name        | Details |
@@ -48,7 +44,6 @@ Details
 | Many skills |         |
 | Many skills |         |
 | Many skills |         |
----
 
 ## Code example
 
