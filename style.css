@@ -1,15 +1,17 @@
 :root {
     --main-cv-bg-color: #eeeeee;
-    --sup-font-color: #7a7a7a;
+    --sup-font-color: #5a5a5a;
     --title-highlight-color: #13a8ec;
     --contact-link-hover-color: #c4c0a0;
+    --nav-link-hover-color: #c4c0a0;
 }
 
 /* Main page styles */
 h1 {
     font-weight: lighter;
     color: var(--title-highlight-color);
-    font-size: 50px;
+    font-size: 60px;
+    text-align: center;
 }
 
 body {
@@ -36,7 +38,7 @@ header {
 }
 
 div#avatar-block {
-    padding: 20px 40px;
+    padding: 20px 37px; /* Warning: Potential problem in future */
     background-color: white;
 }
 
@@ -55,17 +57,13 @@ div#avatar-block>img {
 
 nav>ul {
     display: flex;
-}
-
-nav>ul>li {
-    background-color: var(--main-cv-bg-color);
-    border: 1px solid #6e6e6e;
+    justify-content: space-between;
+    align-items: center;
     flex-basis: auto;
 }
 
 nav>ul>li>a {
-    background-color: var(--main-cv-bg-color);
-    padding: 20px;
+    padding: 10px;
 }
 
 /* ----------------------------------- */
@@ -84,6 +82,51 @@ section {
 aside#left-content {
     background-color: var(--main-cv-bg-color);
     flex-basis: auto;
+}
+
+.main-title-highlight{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+}
+
+.main-regular-text{
+    color: var(--sup-font-color);
+}
+
+.main-period{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-name{
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--title-highlight-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-separator{
+    padding-bottom:30px;
+}
+
+#hard-skill-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hard-skill-block{
+    color: var(--sup-font-color);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--sup-font-color);
 }
 
 /* ----------------------------------- */
@@ -178,6 +221,27 @@ a.contact-link:hover {
 }
 
 /* Nav menu 'a' tag */
-a.nav-link{
+a.nav-link:hover{
+    color: var(--nav-link-hover-color);
+}
 
+#about-section:target+#about-section>h2{
+    color: var(--contact-link-hover-color);
+}
+
+/* C# code styles */
+.code-keyword{
+    color: #6f88f7;
+}
+
+.code-class{
+    color: #53faec;
+}
+
+.code-string{
+    color: #cfa224;
+}
+
+.code-struct{
+    color:#789649;
 }
