@@ -1,3 +1,265 @@
-div{
-    background-color: red;
+:root {
+    --main-cv-bg-color: #eeeeee;
+    --sup-font-color: #5a5a5a;
+    --title-highlight-color: #13a8ec;
+    --contact-link-hover-color: #c4c0a0;
+    --nav-link-hover-color: #c4c0a0;
+}
+
+/* Main page styles */
+h1 {
+    font-weight: lighter;
+    color: var(--title-highlight-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+body {
+    font: 18px Arial, sans-serif;
+}
+
+#page-wrapper {
+    margin: 0px auto;
+    width: 1200px;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgb(66, 66, 66);
+}
+
+/* ----------------------------------- */
+
+/* Head and navigation styles */
+header {
+    background-color: var(--main-cv-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-content: center;
+    /* background-image: linear-gradient(0deg, #eeeeee , white); */
+}
+
+div#avatar-block {
+    padding: 20px 37px; /* Warning: Potential problem in future */
+    background-color: white;
+}
+
+div#avatar-block>img {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgb(66, 66, 66);
+}
+
+#title-nav-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: auto;
+}
+
+nav>ul>li>a {
+    padding: 10px;
+}
+
+/* ----------------------------------- */
+
+
+/* CV content styles */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    margin: 20px 40px;
+}
+
+aside#left-content {
+    background-color: var(--main-cv-bg-color);
+    flex-basis: auto;
+}
+
+.main-title-highlight{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+}
+
+.main-regular-text{
+    color: var(--sup-font-color);
+}
+
+.main-period{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-name{
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--title-highlight-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-separator{
+    padding-bottom:30px;
+}
+
+#hard-skill-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hard-skill-block{
+    color: var(--sup-font-color);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+    border-style: groove;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--sup-font-color);
+}
+
+/* ----------------------------------- */
+
+/* General */
+
+ul {
+    list-style-type: none;
+}
+
+.regular-info-list {
+    padding: 0;
+}
+
+.regular-info-list>li {
+    margin: 10px 0;
+}
+
+.title-highlight {
+    text-transform: uppercase;
+    color: var(--title-highlight-color);
+    font-weight: lighter;
+}
+
+.sup-name-highlight {
+    text-transform: uppercase;
+    color: var(--sup-font-color);
+}
+
+.contanct-info-text {
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.info-text-small {
+    font-size: 14px;
+}
+
+.lang-name {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--sup-font-color);
+    border: 1px solid var(--sup-font-color);
+}
+
+.dot.unchecked {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: inherit;
+    border: 1px solid var(--sup-font-color);
+}
+
+a.multiline-link{
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
+
+/* Contact info 'a' tag */
+
+a.contact-link:hover {
+    color: var(--contact-link-hover-color);
+}
+
+/* Nav menu 'a' tag */
+a.nav-link:hover{
+    color: var(--nav-link-hover-color);
+}
+
+#about-section:target+#about-section>h2{
+    color: var(--contact-link-hover-color);
+}
+
+/* C# code styles */
+.code-keyword{
+    color: #6f88f7;
+}
+
+.code-class{
+    color: #53faec;
+}
+
+.code-string{
+    color: #cfa224;
+}
+
+.code-struct{
+    color:#789649;
+}
+
+/* footer */
+footer {
+    background-color: var(--main-cv-bg-color);
+    padding: 30px;
+}
+
+#footer-description{
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+#footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-icons>a{
+    margin: 10px 30px;
 }
