@@ -1,3 +1,149 @@
-div{
-    background-color: red;
+:root {
+    --main-cv-bg-color: #eeeeee;
+    --sup-font-color: #7a7a7a;
+}
+
+/* Main page styles */
+body {
+    font: 18px Arial, sans-serif;
+}
+
+#page-wrapper {
+    margin: 0px auto;
+    width: 1200px;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgb(66, 66, 66);
+}
+
+/* ----------------------------------- */
+
+/* Head and navigation styles */
+header {
+    background-color: var(--main-cv-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-content: center;
+    /* background-image: linear-gradient(0deg, #eeeeee , white); */
+}
+
+div#avatar-block {
+    padding: 20px 40px;
+    background-color: white;
+}
+
+div#avatar-block>img {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgb(66, 66, 66);
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    background-color: var(--main-cv-bg-color);
+    border: 1px solid #6e6e6e;
+    padding: 20px;
+    flex: 1;
+}
+
+nav>ul>li>a {
+    background-color: var(--main-cv-bg-color);
+}
+
+/* ----------------------------------- */
+
+
+/* CV content styles */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    margin: 20px 40px;
+}
+
+aside#left-content {
+    background-color: var(--main-cv-bg-color);
+}
+
+/* ----------------------------------- */
+
+/* General */
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: var(--main-cv-bg-color);
+}
+
+.regular-info-list {
+    padding: 0;
+}
+
+.regular-info-list>li {
+    margin: 10px 0;
+}
+
+.title-highlight {
+    text-transform: uppercase;
+    color: #13a8ec;
+    font-weight: lighter;
+}
+
+.sup-name-highlight {
+    text-transform: uppercase;
+    color: var(--sup-font-color);
+}
+
+.contanct-info-text {
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.lang-name {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--sup-font-color);
+    border: 1px solid var(--sup-font-color);
+}
+
+.dot.unchecked {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: inherit;
+    border: 1px solid var(--sup-font-color);
+}
+
+/* Contact info 'a' tag */
+/* unvisited link */
+a.contact-link:link {
+    color: inherit;
+}
+
+a.contact-link:visited {
+    color: inherit;
+}
+
+a.contact-link:hover {
+    color: calc(var(--sup-font-color)+20);
+}
+
+a.contact-link:active {
+    color: inherit;
 }
