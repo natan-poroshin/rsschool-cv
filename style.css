@@ -137,10 +137,6 @@ ul {
     list-style-type: none;
 }
 
-footer {
-    background-color: var(--main-cv-bg-color);
-}
-
 .regular-info-list {
     padding: 0;
 }
@@ -244,4 +240,26 @@ a.nav-link:hover{
 
 .code-struct{
     color:#789649;
+}
+
+/* footer */
+footer {
+    background-color: var(--main-cv-bg-color);
+    padding: 30px;
+}
+
+#footer-description{
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+#footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-icons>a{
+    margin: 10px 30px;
 }
